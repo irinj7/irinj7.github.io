@@ -1,17 +1,17 @@
 body {
     background: red;
-    color: blueviolet;
+    color: yellow;
     padding: 10px;
     font-family: arial;
 }
 #all-contents {
-    max-width: 800px;
+  max-width: 800px;
     margin: auto;
 }
 
 /* navigation menu */
 nav {
-    background: gray;
+    background: red;
    margin: 0 auto;
     display: flex;
     padding: 10px;
@@ -19,7 +19,7 @@ nav {
 h1 {
     display: flex;
     align-items: center;
-    color: white;
+    color: yellow;
     flex: 1;
     margin: 0;
 }
@@ -32,12 +32,12 @@ h1 {
 }
 a {
     text-decoration: none;
-    color: #fff;
+    color: yellow;
 }
 
 /* main container area beneath menu */
 main {
-    background: rgb(245, 238, 219);
+    background: red);
     display: flex;
 }
 .sidebar {
