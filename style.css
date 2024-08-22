@@ -50,8 +50,8 @@ main {
     padding: 10px;
 }
 .sidebar-img {
-    border:dashed;
-    border-radius: 20px;
+    border:solid;
+    border-radius:100px;
     width: 200px;
 }
 .content {
