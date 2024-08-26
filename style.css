@@ -1,6 +1,6 @@
 body {
-    background: lightgreen;
-    color: yellowgreen;
+    background: navy;
+    color: navy;
     padding: 10px;
     font-family: cursive;
 }
@@ -11,7 +11,7 @@ body {
 
 /* navigation menu */
 nav {
-    background:forestgreen;
+    background:tomato;
    margin: 0 auto;
     display: flex;
     padding: 10px;
@@ -22,7 +22,7 @@ nav {
 h1 {
     display: flex;
     align-items: center;
-    color:yellowgreen;
+    color:white;
     flex: 1;
     margin: 0;
 }
@@ -35,12 +35,12 @@ h1 {
 }
 a {
     text-decoration: none;
-    color: yellowgreen;
+    color: white;
 }
 
 /* main container area beneath menu */
 main {
-    background: forestgreen;
+    background: tomato;
     display: flex;
     border: dashed;
     border-radius: 20px;
@@ -70,7 +70,7 @@ h2, h3 {
 }
          /* portfolio styles */
          .content h1 {
-            color: lightgreen;
+            color: navy;
         }
 
         #portfolio {
@@ -79,7 +79,7 @@ h2, h3 {
         }
 
         #portfolio li {
-            background: lawngreen;
+            background: tomato;
             padding: 10px;
             border-radius: 50px;
             margin-bottom: 10px;
@@ -92,7 +92,7 @@ h2, h3 {
 
         #portfolio a {
             text-decoration: none;
-            color: #454545;
+            color:white;
         }
                     /* responsive web design */
                     @media screen and (min-width: 120px) and (max-width: 1080px) {
@@ -143,3 +143,6 @@ h2, h3 {
                           justify-content: center;
                         }
                     }
+.abc{
+  border:solid;
+}
