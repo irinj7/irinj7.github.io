@@ -16,7 +16,7 @@ nav {
     display: flex;
     padding: 10px;
     margin-bottom: 20px;
-    border:dashed;
+    border:solid;
     border-radius: 20px;
 }
 h1 {
@@ -51,7 +51,7 @@ main {
     padding: 10px;
 }
 .sidebar-img {
-    border:solid;
+    border: solid;
     border-radius:100px;
     width: 200px;
 }
@@ -145,4 +145,10 @@ h2, h3 {
                     }
 .abc{
   border:solid;
+}
+.abe-photo  {
+  border-style:solid;
+  border-radius: 100px;
+
+  
 }
