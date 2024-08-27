@@ -42,8 +42,9 @@ a {
 main {
     background: tomato;
     display: flex;
-    border: dashed;
+    border: solid;
     border-radius: 20px;
+    border-bottom: red;
     
 }
 .sidebar {
@@ -149,6 +150,7 @@ h2, h3 {
 .abe-photo  {
   border-style:solid;
   border-radius: 100px;
+  border-color: tomato;
 
   
 }
