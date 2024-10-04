@@ -9,7 +9,7 @@
 		.box {
 			width: 70px;
 			height: 70px;
-			background-color: teal;
+			background-color: red;
 			font-size: 300%;
 			text-align: center;
 			user-select: none;
@@ -44,8 +44,6 @@
 			var box = jQuery('.box');	// reference to the HTML .box element
 			var board = jQuery('.board');	// reference to the HTML .board element
 			var boardWidth = board.width();	// the maximum X-Coordinate of the screen
-			var boardHeight = jQuery(window).height();
-
 			// Every 50 milliseconds, call the update Function (see below)
 			setInterval(update, 50);
 
@@ -53,15 +51,16 @@
 			box.on('click', handleBoxClick);
 
 			// moves the Box to a new position on the screen along the X-Axis
-			function moveBoxTo(newPositionX) {
+			function moveBoxTo(newPositionX, newPositionY) {
 				box.css("left", newPositionX);
-				box.css("top", newPositionY);
+				box.css("top", newPositionY) ;
 			}
 
 			// changes the text displayed on the Box
 			function changeBoxText(newText) {
 				box.text(newText);
 			}
+
 
 			//////////////////////////////////////////////////////////////////
 			/////////////////// YOUR CODE BELOW HERE /////////////////////////
@@ -73,6 +72,11 @@
 			var points = 0;
 			var speed = 10;
 			var speedY = 10
+			var boardHeight = jQuery(window).height();
+			var randNum = Math.random() * 100;
+			var randomNumberBetween0and225 = Math.random() * 225;
+			var colorStr = randomNumberBetween0and10;
+			
 
 
 			/* 
@@ -83,20 +87,20 @@
 			function update() {
 			/* Your Code to Increase positionX by 10 HERE */ 
 				positionX = positionX + speed;
-				moveBoxTo(positionX, positionY);
+				positionY = positionY + speedY;
 				if ( positionX > boardWidth ) {
-					speed = -speed
+					speed = -speed;
 				}
 				else if ( positionX < 0 ) {
-					speed = -speed 
+					speed = -speed;
 				}
 				if ( positionY > boardHeight ){
-					speedY = -speedY
+					speedY = -speedY;
 				}
-				else if ( positionY < boardHeight) {
-					speedY = -speedY
+				else if ( positionY < 0) {
+					speedY = -speedY;
 				}
-                      
+				moveBoxTo(positionX, positionY);     
 				
 
 
