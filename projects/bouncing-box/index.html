@@ -9,7 +9,7 @@
 		.box {
 			width: 70px;
 			height: 70px;
-			background-color: red;
+			background-color: blue;
 			font-size: 300%;
 			text-align: center;
 			user-select: none;
@@ -22,6 +22,7 @@
 
 		.board {
 			height: 100vh;
+			background-image: url("https://www.mos.org/sites/default/files/styles/max_2600x2600/public/2024-02/Planetarium-Explore-The-Universe-16x9.jpg?itok=3esnqgTg");
 		}
 	</style>
 	<!-- 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
@@ -117,10 +118,10 @@
 				points = points + 1
 				changeBoxText(points);
 				if ( speed > 0  ) {
-                    speed = speed + 3
+                    speed = speed + 10
 				}
 				else if ( speed < 0 ) {
-                        speed = speed - 3
+                        speed = speed - 10
 				}
 
 
